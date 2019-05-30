@@ -1,4 +1,12 @@
 @import './index';
 @import './variables';
+@import './button/button';
+
 
 @import './header/header';
+@import './home/home';
+
+
+.page-brand {
+    color: $main-light-color;
+}

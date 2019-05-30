@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from './Header/Header';
 import Meta from './Meta';
 
 
@@ -8,7 +7,6 @@ class Page extends Component {
     return (
       <>
         <Meta />
-        <Header />
         {this.props.children}
       </>
     );

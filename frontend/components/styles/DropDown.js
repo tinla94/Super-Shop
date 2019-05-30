@@ -31,17 +31,5 @@ const glow = keyframes`
   }
 `;
 
-const SearchStyles = styled.div`
-  position: relative;
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 0;
-    font-size: 2rem;
-    &.loading {
-      animation: ${glow} 0.5s ease-in-out infinite alternate;
-    }
-  }
-`;
 
-export { DropDown, DropDownItem, SearchStyles };
+export { DropDown, DropDownItem};

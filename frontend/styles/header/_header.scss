@@ -52,5 +52,25 @@
             border: 0;
             font-size: 1.3rem;
         }
+
+        &-dropwdown {
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+            box-shadow: 1px 1px 1px rgba($main-light-grey, 0.5);
+
+            &-item {
+                border-bottom: 1px solid $main-dark-grey;
+                padding: 1rem;
+                transition: all 0.2s;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+    
+                img {
+                    margin-right: 10px;
+                }
+            }    
+        }        
     }
 }

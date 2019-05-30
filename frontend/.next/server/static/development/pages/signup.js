@@ -962,42 +962,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Auth_Signup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Auth/Signup */ "./components/Auth/Signup.js");
 /* harmony import */ var _components_Auth_Signin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Auth/Signin */ "./components/Auth/Signin.js");
 /* harmony import */ var _components_Auth_RequestReset__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Auth/RequestReset */ "./components/Auth/RequestReset.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/pages/signup.js";
 
 
 
 
 
-var Columns = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.div.withConfig({
-  displayName: "signup__Columns",
-  componentId: "rkvjf9-0"
-})(["display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));grid-gap:20px;"]);
-
 var SignupPage = function SignupPage() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Columns, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Auth_Signup__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Auth_Signup__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Auth_Signin__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Auth_RequestReset__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 8
     },
     __self: this
   }));

@@ -35,10 +35,14 @@ const Nav = () => (
             </>
             )}
             {!me && (
-            <Link href="/signup" className="nav-link">
-                <a>SignIn</a>
-            </Link>
-
+                <>
+                    <Link href="/signin" className="nav-link">
+                        <a>SignIn</a>
+                    </Link>
+                    <Link href="/signup" className="nav-link">
+                        <a>SignUp</a>
+                    </Link>
+                </>
             )}
         </div>
         )}

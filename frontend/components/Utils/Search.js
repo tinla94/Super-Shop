@@ -4,7 +4,7 @@ import Router from 'next/router';
 import { ApolloConsumer } from 'react-apollo';
 import gql from 'graphql-tag';
 import debounce from 'lodash.debounce';
-import { DropDown, DropDownItem, SearchStyles } from '../styles/DropDown';
+import { DropDown, DropDownItem } from '../styles/DropDown';
 
 
 
@@ -76,20 +76,21 @@ class Search extends React.Component {
                     )}
                 </ApolloConsumer>
                 {isOpen && (
-                    <DropDown>
+                    <div className="nav-search-dropdown">
                     {this.state.items.map((item, index) => (
-                        <DropDownItem
+                        <div
+                            className="nav-search-dropdown-item"
                             {...getItemProps({ item })}
                             key={item.id}
                             highlighted={index === highlightedIndex}
                             >
                             <img width="50" src={item.image} alt={item.title} />
                             {item.title}
-                        </DropDownItem>
+                        </div>
                     ))}
                     {!this.state.items.length &&
-                        !this.state.loading && <DropDownItem> No Item Found</DropDownItem>}
-                    </DropDown>
+                        !this.state.loading && <div className="nav-search-dropdown"> No Item Found</div>}
+                    </div>
                 )}
                 </div>
             )}

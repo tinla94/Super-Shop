@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header';
 import Item from './Item';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
@@ -35,6 +36,8 @@ const ItemsList = styled.div`
 export class Items extends Component {
   render() {
     return (
+      <>
+        <Header />
         <Center>
             <Pagination page={this.props.page}/>
             <Query 
@@ -54,6 +57,7 @@ export class Items extends Component {
             </Query>
             <Pagination page={this.props.page}/>
         </Center>
+      </>
     )
   }
 }

@@ -10,6 +10,25 @@ html, body {
   margin: 0;
   padding: 0; }
 
+.button {
+  padding: .9rem 3rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  box-shadow: 1px 4px 4px rgba(102, 102, 102, 0.5);
+  border: 1px solid #676d79;
+  color: #fff;
+  cursor: pointer;
+  transition: all .2s; }
+  .button:hover {
+    transform: translateY(-2px);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  .button:active, .button:focus {
+    border: none;
+    box-shadow: 1px 2px 4px rgba(102, 102, 102, 0.5); }
+  .button-main {
+    background-color: #312450; }
+
 .nav {
   width: 100%;
   text-align: center; }
@@ -48,6 +67,50 @@ html, body {
       width: 100%;
       border: 0;
       font-size: 1.3rem; }
+    .nav-search-dropwdown {
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+      box-shadow: 1px 1px 1px rgba(103, 109, 121, 0.5); }
+      .nav-search-dropwdown-item {
+        border-bottom: 1px solid #666;
+        padding: 1rem;
+        transition: all 0.2s;
+        cursor: pointer;
+        display: flex;
+        align-items: center; }
+        .nav-search-dropwdown-item img {
+          margin-right: 10px; }
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("/static/images/background1.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #fff; }
+  .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center; }
+  .home-title {
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    margin-bottom: 2.5rem; }
+  .home-title-sub {
+    font-size: 2.2rem;
+    letter-spacing: .3rem; }
+  .home p {
+    letter-spacing: .15rem;
+    font-size: 1.3rem;
+    margin: 1rem 0; }
+
+.page-brand {
+  color: #5e42a6; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
