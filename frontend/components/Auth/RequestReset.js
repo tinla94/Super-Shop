@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
-import Form from '../styles/Form';
+import Form from '../styles/form/Form';
+import { FormButton } from '../styles/button/Button';
 import Error from '../Utils/ErrorMessage';
 
 
@@ -25,6 +27,8 @@ class RequestReset extends Component {
 
     render() {
         return (
+          <>
+            <Header />
             <Mutation 
                 mutation={REQUEST_RESET_MUTATION} 
                 variables={this.state}>
@@ -51,12 +55,12 @@ class RequestReset extends Component {
                       onChange={this.handleChange}
                     />
                   </label>
-    
-                  <button type="submit">Send Request</button>
+                  <FormButton>Send Request</FormButton>
                 </fieldset>
               </Form>
             )}
           </Mutation>
+        </>
         )
     }
 }

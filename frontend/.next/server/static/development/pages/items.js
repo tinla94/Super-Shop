@@ -807,14 +807,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Nav */ "./components/Header/Nav.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "nprogress");
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _Cart_Cart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Cart/Cart */ "./components/Cart/Cart.js");
-/* harmony import */ var _Utils_Search__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Utils/Search */ "./components/Utils/Search.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Nav */ "./components/Header/Nav.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress */ "nprogress");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Cart_Cart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Cart/Cart */ "./components/Cart/Cart.js");
+/* harmony import */ var _Utils_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Utils/Search */ "./components/Utils/Search.js");
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Header/Header.js";
+
 
 
 
@@ -823,76 +826,89 @@ var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/comp
 
  // page loading
 
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeStart = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.start();
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeStart = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.start();
 };
 
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeComplete = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeComplete = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
 };
 
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeError = function () {
-  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.remove();
+next_router__WEBPACK_IMPORTED_MODULE_4___default.a.onRouteChangeError = function () {
+  nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.remove();
 };
+
+var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.h1.withConfig({
+  displayName: "Header__Logo",
+  componentId: "sc-1o383dx-0"
+})(["font-size:3rem;position:relative;z-index:2;letter-spacing:.5rem;a{padding:1rem;color:", ";text-transform:uppercase;text-decoration:none;}@media (max-width:1300px){margin:0;text-align:center;}"], function (props) {
+  return props.theme.lightgrey;
+});
+var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.header.withConfig({
+  displayName: "Header__StyledHeader",
+  componentId: "sc-1o383dx-1"
+})([".bar{border-bottom:.5rem solid ", ";display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;@media (max-width:1300px){grid-template-columns:1fr;justify-content:center;}}.sub-bar{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid ", ";}"], function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
+  return props.theme.lightgrey;
+});
 
 var Header = function Header() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "nav",
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "nav-top",
+    className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 59
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "nav-top-brand",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 62
     },
     __self: this
-  }, "Super Shoes")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Super Shoes"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 65
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 67
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Search__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Search__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 68
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_Cart__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_Cart__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 70
     },
     __self: this
   }));
@@ -916,12 +932,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _User_User__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../User/User */ "./components/User/User.js");
-/* harmony import */ var _Auth_Signout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Auth/Signout */ "./components/Auth/Signout.js");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-apollo */ "react-apollo");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _Cart_Cart__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Cart/Cart */ "./components/Cart/Cart.js");
-/* harmony import */ var _Cart_CartCount__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Cart/CartCount */ "./components/Cart/CartCount.js");
+/* harmony import */ var _styles_header_NavStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/header/NavStyles */ "./components/styles/header/NavStyles.js");
+/* harmony import */ var _Auth_Signout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Auth/Signout */ "./components/Auth/Signout.js");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-apollo */ "react-apollo");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Cart_Cart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Cart/Cart */ "./components/Cart/Cart.js");
+/* harmony import */ var _Cart_CartCount__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Cart/CartCount */ "./components/Cart/CartCount.js");
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Header/Nav.js";
+
 
 
 
@@ -934,48 +952,34 @@ var Nav = function Nav() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_User_User__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, function (_ref) {
-    var me = _ref.data.me;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "nav-bottom",
+    var data = _ref.data;
+    var me = data ? data.me : null;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_header_NavStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      "data-test": "nav",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 14
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/items",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 15
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13
+        lineNumber: 16
       },
       __self: this
     }, "Shop")), me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/sell",
-      className: "nav-link",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, "Sell")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/orders",
-      className: "nav-link",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20
@@ -987,9 +991,8 @@ var Nav = function Nav() {
         lineNumber: 21
       },
       __self: this
-    }, "Orders")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/me",
-      className: "nav-link",
+    }, "Sell")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/orders",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 23
@@ -1001,17 +1004,30 @@ var Nav = function Nav() {
         lineNumber: 24
       },
       __self: this
-    }, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Auth_Signout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }, "Orders")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/me",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 26
       },
       __self: this
-    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_4__["Mutation"], {
-      mutation: _Cart_Cart__WEBPACK_IMPORTED_MODULE_5__["TOGGLE_CART_MUTATION"],
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 27
+      },
+      __self: this
+    }, "Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Auth_Signout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_5__["Mutation"], {
+      mutation: _Cart_Cart__WEBPACK_IMPORTED_MODULE_6__["TOGGLE_CART_MUTATION"],
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30
       },
       __self: this
     }, function (toggleCart) {
@@ -1019,36 +1035,21 @@ var Nav = function Nav() {
         onClick: toggleCart,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 32
         },
         __self: this
-      }, "My Cart", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_CartCount__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }, "My Cart", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_CartCount__WEBPACK_IMPORTED_MODULE_7__["default"], {
         count: me.cart.reduce(function (tally, cartItem) {
           return tally + cartItem.quantity;
         }, 0),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 34
         },
         __self: this
       }));
     })), !me && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: "/signin",
-      className: "nav-link",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 39
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: this
-    }, "SignIn")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/signup",
-      className: "nav-link",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 42
@@ -1060,7 +1061,20 @@ var Nav = function Nav() {
         lineNumber: 43
       },
       __self: this
-    }, "SignUp"))));
+    }, "Sign In")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/signup",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46
+      },
+      __self: this
+    }, "Sign Up"))));
   });
 };
 
@@ -1830,7 +1844,7 @@ var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/comp
 var ErrorStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "ErrorMessage__ErrorStyles",
   componentId: "sc-134dr6l-0"
-})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.05);border-left:5px solid red;p{margin:0;font-weight:100;}strong{margin-right:1rem;}"]);
+})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.5);border-left:5px solid #493382;p{margin:0;font-weight:100;}strong{margin-right:1rem;}"]);
 
 var DisplayError = function DisplayError(_ref) {
   var error = _ref.error;
@@ -2053,7 +2067,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash.debounce */ "lodash.debounce");
 /* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash_debounce__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _styles_DropDown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/DropDown */ "./components/styles/DropDown.js");
+/* harmony import */ var _styles_header_DropDown__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/header/DropDown */ "./components/styles/header/DropDown.js");
 
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Utils/Search.js";
 
@@ -2192,8 +2206,7 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "nav-search",
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_header_DropDown__WEBPACK_IMPORTED_MODULE_7__["SearchStyles"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 58
@@ -2230,7 +2243,7 @@ function (_React$Component) {
         }, function (client) {
           return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", _extends({}, getInputProps({
             type: 'search',
-            placeholder: 'Search Item',
+            placeholder: 'Search For An Item',
             id: 'search',
             className: _this2.state.loading ? 'loading' : '',
             onChange: function onChange(e) {
@@ -2245,17 +2258,14 @@ function (_React$Component) {
             },
             __self: this
           }));
-        }), isOpen && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          className: "nav-search-dropdown",
+        }), isOpen && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_header_DropDown__WEBPACK_IMPORTED_MODULE_7__["DropDown"], {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 79
           },
           __self: this
         }, _this2.state.items.map(function (item, index) {
-          return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", _extends({
-            className: "nav-search-dropdown-item"
-          }, getItemProps({
+          return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_header_DropDown__WEBPACK_IMPORTED_MODULE_7__["DropDownItem"], _extends({}, getItemProps({
             item: item
           }), {
             key: item.id,
@@ -2271,18 +2281,17 @@ function (_React$Component) {
             alt: item.title,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 87
+              lineNumber: 86
             },
             __self: this
           }), item.title);
-        }), !_this2.state.items.length && !_this2.state.loading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-          className: "nav-search-dropdown",
+        }), !_this2.state.items.length && !_this2.state.loading && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_header_DropDown__WEBPACK_IMPORTED_MODULE_7__["DropDownItem"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
+            lineNumber: 91
           },
           __self: this
-        }, " No Item Found")));
+        }, " Nothing Found ", inputValue)));
       }));
     }
   }]);
@@ -2337,43 +2346,6 @@ var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.butto
   componentId: "p81tk9-0"
 })(["background:black;color:white;font-size:3rem;border:0;position:absolute;z-index:2;right:0;"]);
 /* harmony default export */ __webpack_exports__["default"] = (CloseButton);
-
-/***/ }),
-
-/***/ "./components/styles/DropDown.js":
-/*!***************************************!*\
-  !*** ./components/styles/DropDown.js ***!
-  \***************************************/
-/*! exports provided: DropDown, DropDownItem */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DropDown", function() { return DropDown; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DropDownItem", function() { return DropDownItem; });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var DropDown = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "DropDown",
-  componentId: "sc-16cihpv-0"
-})(["position:absolute;width:100%;z-index:2;border:1px solid ", ";"], function (props) {
-  return props.theme.lightgrey;
-});
-var DropDownItem = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "DropDown__DropDownItem",
-  componentId: "sc-16cihpv-1"
-})(["border-bottom:1px solid ", ";background:", ";padding:1rem;transition:all 0.2s;", ";display:flex;align-items:center;border-left:10px solid ", ";img{margin-right:10px;}"], function (props) {
-  return props.theme.lightgrey;
-}, function (props) {
-  return props.highlighted ? '#f7f7f7' : 'white';
-}, function (props) {
-  return props.highlighted ? 'padding-left: 2rem;' : null;
-}, function (props) {
-  return props.highlighted ? props.theme.lightgrey : 'white';
-});
-var glow = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["from{box-shadow:0 0 0px yellow;}to{box-shadow:0 0 10px 1px yellow;}"]);
-
 
 /***/ }),
 
@@ -2512,6 +2484,78 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConf
   return props.theme.red;
 });
 /* harmony default export */ __webpack_exports__["default"] = (Title);
+
+/***/ }),
+
+/***/ "./components/styles/header/DropDown.js":
+/*!**********************************************!*\
+  !*** ./components/styles/header/DropDown.js ***!
+  \**********************************************/
+/*! exports provided: DropDown, DropDownItem, SearchStyles */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DropDown", function() { return DropDown; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DropDownItem", function() { return DropDownItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchStyles", function() { return SearchStyles; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var DropDown = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "DropDown",
+  componentId: "sc-13kxea1-0"
+})(["position:absolute;width:100%;z-index:2;border:1px solid ", ";"], function (props) {
+  return props.theme.lightgrey;
+});
+var DropDownItem = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "DropDown__DropDownItem",
+  componentId: "sc-13kxea1-1"
+})(["border-bottom:1px solid ", ";background:", ";padding:1rem;transition:all 0.2s;", ";display:flex;align-items:center;border-left:10px solid ", ";cursor:pointer;img{margin-right:10px;}"], function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
+  return props.highlighted ? '#f7f7f7' : 'white';
+}, function (props) {
+  return props.highlighted ? 'padding-left: 2rem;' : null;
+}, function (props) {
+  return props.highlighted ? props.theme.lightgrey : 'white';
+});
+var glow = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"])(["from{box-shadow:0 0 0px yellow;}to{box-shadow:0 0 10px 1px yellow;}"]);
+var SearchStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "DropDown__SearchStyles",
+  componentId: "sc-13kxea1-2"
+})(["position:relative;input{width:100%;padding:1rem;border:0;font-size:1.2rem;&.loading{animation:", " 0.5s ease-in-out infinite alternate;}}"], glow);
+
+
+/***/ }),
+
+/***/ "./components/styles/header/NavStyles.js":
+/*!***********************************************!*\
+  !*** ./components/styles/header/NavStyles.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
+  displayName: "NavStyles",
+  componentId: "sc-9m6sd9-0"
+})(["margin:0;padding:0;display:flex;justify-self:end;font-size:2rem;background:", ";a,button{color:", ";padding:1rem 3rem;letter-spacing:.2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:900;font-size:1.3rem;background:none;border:0;cursor:pointer;font-weight:800;@media (max-width:700px){font-size:1.2rem;padding:1rem;}&:before{content:'';width:2px;background:", ";height:100%;left:0;position:absolute;transform:skew(-20deg);top:0;bottom:0;}&:after{height:2px;background:", ";content:'';width:0;position:absolute;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);left:50%;margin-top:2rem;}&:hover,&:focus,&:active{color:#fff;}}@media (max-width:1300px){border-top:1px solid ", ";width:100%;justify-content:center;font-size:1.5rem;}"], function (props) {
+  return props.theme.mainColor;
+}, function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
+  return props.theme.mainColor;
+});
+/* harmony default export */ __webpack_exports__["default"] = (NavStyles);
 
 /***/ }),
 

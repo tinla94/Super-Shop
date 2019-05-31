@@ -4,7 +4,7 @@ import Router from 'next/router';
 import { ApolloConsumer } from 'react-apollo';
 import gql from 'graphql-tag';
 import debounce from 'lodash.debounce';
-import { DropDown, DropDownItem } from '../styles/DropDown';
+import { DropDown, DropDownItem, SearchStyles } from '../styles/header/DropDown';
 
 
 
@@ -55,47 +55,46 @@ class Search extends React.Component {
 
     render() {
         return(
-        <div className="nav-search">
+            <SearchStyles>
             <Downshift onChange={routeToItem} itemToString={item => (item === null ? '' : item.title)}>
-            {({ getInputProps, getItemProps, isOpen, inputValue, highlightedIndex }) => (
+              {({ getInputProps, getItemProps, isOpen, inputValue, highlightedIndex }) => (
                 <div>
-                <ApolloConsumer>
+                  <ApolloConsumer>
                     {client => (
-                    <input
+                      <input
                         {...getInputProps({
-                        type: 'search',
-                        placeholder: 'Search Item',
-                        id: 'search',
-                        className: this.state.loading ? 'loading' : '',
-                        onChange: e => {
+                          type: 'search',
+                          placeholder: 'Search For An Item',
+                          id: 'search',
+                          className: this.state.loading ? 'loading' : '',
+                          onChange: e => {
                             e.persist();
                             this.onChange(e, client);
-                        },
+                          },
                         })}
-                    />
+                      />
                     )}
-                </ApolloConsumer>
-                {isOpen && (
-                    <div className="nav-search-dropdown">
-                    {this.state.items.map((item, index) => (
-                        <div
-                            className="nav-search-dropdown-item"
-                            {...getItemProps({ item })}
-                            key={item.id}
-                            highlighted={index === highlightedIndex}
-                            >
-                            <img width="50" src={item.image} alt={item.title} />
-                            {item.title}
-                        </div>
-                    ))}
-                    {!this.state.items.length &&
-                        !this.state.loading && <div className="nav-search-dropdown"> No Item Found</div>}
-                    </div>
-                )}
+                  </ApolloConsumer>
+                  {isOpen && (
+                    <DropDown>
+                      {this.state.items.map((item, index) => (
+                        <DropDownItem
+                          {...getItemProps({ item })}
+                          key={item.id}
+                          highlighted={index === highlightedIndex}
+                        >
+                          <img width="50" src={item.image} alt={item.title} />
+                          {item.title}
+                        </DropDownItem>
+                      ))}
+                      {!this.state.items.length &&
+                        !this.state.loading && <DropDownItem> Nothing Found {inputValue}</DropDownItem>}
+                    </DropDown>
+                  )}
                 </div>
-            )}
+              )}
             </Downshift>
-        </div>
+          </SearchStyles>
         )
     }
 }

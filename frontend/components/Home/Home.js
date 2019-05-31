@@ -1,20 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
+import PageBrand from '../styles/font/PageBrand';
+import HomeStyles from '../styles/home/HomeStyles';
+import { MainButton } from '../styles/button/Button';
 
 const Home = () => {
     return(
-        <div className="home">
+        <HomeStyles>
             <div className="home-content">
-                <h1 className="home-title">Greeting from <span className="page-brand">SuperShoes</span></h1>
-                <h2 className="home-title-sub">Your <span className="page-brand">Footwear</span> To Everywhere</h2>
+                <h1 className="home-title">Greeting from <PageBrand>SuperShoes</PageBrand></h1>
+                <h2 className="home-title-sub">Your <PageBrand>Footwear</PageBrand> To Everywhere</h2>
                 <p>Explore our shop today to find your matching shoes!!!</p>
                 <Link href="/items">
-                    <button className="button button-main">
+                    <MainButton>
                         Explore Now
-                    </button>
+                    </MainButton>
                 </Link>
             </div>
-        </div>
+        </HomeStyles>
     )
 }
 

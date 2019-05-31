@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
-import Form from '../styles/Form';
+import Form from '../styles/form/Form';
+import { FormButton } from '../styles/button/Button';
 import Error from '../Utils/ErrorMessage';
 import { CURRENT_USER_QUERY } from '../User/User';
+import Header from '../Header/Header';
 
 
 
@@ -31,6 +33,8 @@ class Signup extends Component {
 
   render() {
     return (
+      <>
+      <Header />
       <Mutation 
         mutation={SIGNUP_MUTATION} 
         variables={this.state}
@@ -78,12 +82,12 @@ class Signup extends Component {
                   onChange={this.handleChange}
                 />
               </label>
-
-              <button type="submit">Sign Up</button>
+              <FormButton>Sign Up</FormButton>
             </fieldset>
           </Form>
         )}
       </Mutation>
+      </>
     )
   }
 }
