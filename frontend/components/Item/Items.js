@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import Banner from '../Banner/Banner';
 import Item from './Item';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
@@ -38,6 +39,9 @@ export class Items extends Component {
     return (
       <>
         <Header />
+        <Banner 
+          text='"Get your shoes today with our great deal!"'
+        />
         <Center>
             <Pagination page={this.props.page}/>
             <Query 

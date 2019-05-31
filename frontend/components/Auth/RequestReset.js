@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import Banner from '../Banner/Banner';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
 import Form from '../styles/form/Form';
@@ -29,6 +30,9 @@ class RequestReset extends Component {
         return (
           <>
             <Header />
+            <Banner 
+              text='"Shoes are like friends, they can support you, or take you down"'
+            />
             <Mutation 
                 mutation={REQUEST_RESET_MUTATION} 
                 variables={this.state}>

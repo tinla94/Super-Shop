@@ -14,12 +14,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Header/Header */ "./components/Header/Header.js");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.esm.js");
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _styles_form_Form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/form/Form */ "./components/styles/form/Form.js");
-/* harmony import */ var _styles_button_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/button/Button */ "./components/styles/button/Button.js");
-/* harmony import */ var _Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Utils/ErrorMessage */ "./components/Utils/ErrorMessage.js");
+/* harmony import */ var _Banner_Banner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Banner/Banner */ "./components/Banner/Banner.js");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.esm.js");
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _styles_form_Form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/form/Form */ "./components/styles/form/Form.js");
+/* harmony import */ var _styles_button_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/button/Button */ "./components/styles/button/Button.js");
+/* harmony import */ var _Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Utils/ErrorMessage */ "./components/Utils/ErrorMessage.js");
 
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Auth/RequestReset.js";
 
@@ -66,7 +67,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var REQUEST_RESET_MUTATION = graphql_tag__WEBPACK_IMPORTED_MODULE_4___default()(_templateObject());
+
+var REQUEST_RESET_MUTATION = graphql_tag__WEBPACK_IMPORTED_MODULE_5___default()(_templateObject());
 
 var RequestReset =
 /*#__PURE__*/
@@ -105,22 +107,29 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_3__["Mutation"], {
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Banner_Banner__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        text: "\"Shoes are like friends, they can support you, or take you down\"",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_4__["Mutation"], {
         mutation: REQUEST_RESET_MUTATION,
         variables: this.state,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 36
         },
         __self: this
       }, function (reset, _ref) {
         var error = _ref.error,
             loading = _ref.loading,
             called = _ref.called;
-        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_form_Form__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_form_Form__WEBPACK_IMPORTED_MODULE_6__["default"], {
           method: "post",
           onSubmit:
           /*#__PURE__*/
@@ -155,13 +164,13 @@ function (_Component) {
           }(),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 36
+            lineNumber: 40
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44
+            lineNumber: 48
           },
           __self: this
         }, "Reset Password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("fieldset", {
@@ -169,27 +178,27 @@ function (_Component) {
           "aria-busy": loading,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 49
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_8__["default"], {
           error: error,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 46
+            lineNumber: 50
           },
           __self: this
         }), !error && !loading && called && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 47
+            lineNumber: 51
           },
           __self: this
         }, "Please check your email for a reset link!"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "email",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 48
+            lineNumber: 52
           },
           __self: this
         }, "Email", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -200,13 +209,13 @@ function (_Component) {
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 50
+            lineNumber: 54
           },
           __self: this
-        })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_button_Button__WEBPACK_IMPORTED_MODULE_6__["FormButton"], {
+        })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_button_Button__WEBPACK_IMPORTED_MODULE_7__["FormButton"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 62
           },
           __self: this
         }, "Send Request")));
@@ -244,6 +253,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Utils/ErrorMessage */ "./components/Utils/ErrorMessage.js");
 /* harmony import */ var _User_User__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../User/User */ "./components/User/User.js");
 /* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Header/Header */ "./components/Header/Header.js");
+/* harmony import */ var _Banner_Banner__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../Banner/Banner */ "./components/Banner/Banner.js");
 
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Auth/Signin.js";
 
@@ -282,6 +292,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -333,14 +344,21 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Banner_Banner__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        text: "\"Good Shoes Take You Good Places!\"",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "form-page",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_3__["Mutation"], {
@@ -351,7 +369,7 @@ function (_Component) {
         }],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
       }, function (signup, _ref) {
@@ -394,13 +412,13 @@ function (_Component) {
           }(),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44
+            lineNumber: 48
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 56
           },
           __self: this
         }, "Sign In"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("fieldset", {
@@ -408,21 +426,21 @@ function (_Component) {
           "aria-busy": loading,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 57
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_7__["default"], {
           error: error,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 58
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "email",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 59
           },
           __self: this
         }, "Email", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -433,14 +451,14 @@ function (_Component) {
           onChange: _this2.saveToState,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 57
+            lineNumber: 61
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "password",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 69
           },
           __self: this
         }, "Password", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -451,20 +469,20 @@ function (_Component) {
           onChange: _this2.saveToState,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 71
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 75
+            lineNumber: 79
           },
           __self: this
         }, "Forgot Your Password?", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
           href: "/resetpassword",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 77
+            lineNumber: 81
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -473,13 +491,13 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 78
+            lineNumber: 82
           },
           __self: this
         }, "Click Here"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_button_Button__WEBPACK_IMPORTED_MODULE_6__["FormButton"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 83
+            lineNumber: 87
           },
           __self: this
         }, "Sign In")));
@@ -577,6 +595,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Utils/ErrorMessage */ "./components/Utils/ErrorMessage.js");
 /* harmony import */ var _User_User__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../User/User */ "./components/User/User.js");
 /* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Header/Header */ "./components/Header/Header.js");
+/* harmony import */ var _Banner_Banner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Banner/Banner */ "./components/Banner/Banner.js");
 
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Auth/Signup.js";
 
@@ -615,6 +634,7 @@ function _templateObject() {
 }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -665,7 +685,14 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Banner_Banner__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        text: "\"Perfectionism is just fear in really good shoes!",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_2__["Mutation"], {
@@ -676,7 +703,7 @@ function (_Component) {
         }],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 42
         },
         __self: this
       }, function (signup, _ref) {
@@ -719,13 +746,13 @@ function (_Component) {
           }(),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44
+            lineNumber: 48
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 56
           },
           __self: this
         }, "Sign Up"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("fieldset", {
@@ -733,21 +760,21 @@ function (_Component) {
           "aria-busy": loading,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 57
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Utils_ErrorMessage__WEBPACK_IMPORTED_MODULE_6__["default"], {
           error: error,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 58
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "email",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 59
           },
           __self: this
         }, "Email", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -758,14 +785,14 @@ function (_Component) {
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 57
+            lineNumber: 61
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "name",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 69
           },
           __self: this
         }, "Name", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -776,14 +803,14 @@ function (_Component) {
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 71
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
           htmlFor: "password",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 75
+            lineNumber: 79
           },
           __self: this
         }, "Password", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -794,13 +821,13 @@ function (_Component) {
           onChange: _this2.handleChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 77
+            lineNumber: 81
           },
           __self: this
         })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_styles_button_Button__WEBPACK_IMPORTED_MODULE_5__["FormButton"], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 85
+            lineNumber: 89
           },
           __self: this
         }, "Sign Up")));
@@ -812,6 +839,42 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Signup);
+
+/***/ }),
+
+/***/ "./components/Banner/Banner.js":
+/*!*************************************!*\
+  !*** ./components/Banner/Banner.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_utils_BannerStyle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/utils/BannerStyle */ "./components/styles/utils/BannerStyle.js");
+var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Banner/Banner.js";
+
+
+
+var Banner = function Banner(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_utils_BannerStyle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, props.text));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Banner);
 
 /***/ }),
 
@@ -1395,7 +1458,9 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1.withConf
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-1o383dx-1"
-})([".bar{border-bottom:.5rem solid ", ";display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;@media (max-width:1300px){grid-template-columns:1fr;justify-content:center;}}.sub-bar{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid ", ";}"], function (props) {
+})([".bar{border-top:1px solid ", ";border-bottom:1px solid ", ";display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;@media (max-width:1300px){grid-template-columns:1fr;justify-content:center;}}.sub-bar{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid ", ";}"], function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
   return props.theme.lightgrey;
 }, function (props) {
   return props.theme.lightgrey;
@@ -1405,58 +1470,58 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   }, "Super Shoes"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Search__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_Cart__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }));
@@ -1912,7 +1977,7 @@ var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/comp
 var ErrorStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "ErrorMessage__ErrorStyles",
   componentId: "sc-134dr6l-0"
-})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.5);border-left:5px solid #493382;p{margin:0;font-weight:100;}strong{margin-right:1rem;}"]);
+})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.5);border-left:5px solid #493382;color:red;p{margin:0;font-weight:400;}strong{margin-right:1rem;}"]);
 
 var DisplayError = function DisplayError(_ref) {
   var error = _ref.error;
@@ -1924,14 +1989,14 @@ var DisplayError = function DisplayError(_ref) {
         key: i,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         "data-test": "graphql-error",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 28
         },
         __self: this
       }, error.message.replace('GraphQL error: ', '')));
@@ -1941,14 +2006,14 @@ var DisplayError = function DisplayError(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ErrorStyles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     "data-test": "graphql-error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 36
     },
     __self: this
   }, error.message.replace('GraphQL error: ', '')));
@@ -2347,9 +2412,7 @@ var loading = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["keyframes"]
 var Form = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].form.withConfig({
   displayName: "Form",
   componentId: "m85bme-0"
-})(["background:rgba(0,0,0,0.02);border:5px solid white;font-size:1.5rem;line-height:1.5;font-weight:600;padding 10rem 20rem 5rem 20rem;color:#666;height:84vh;h2{font-size:4rem;letter-spacing:.4rem;}p{font-size:1.1rem;margin:1rem 0;}label{display:block;margin:2rem 0;letter-spacing:.4rem;}input,textarea,select{width:100%;padding:0.5rem;font-size:1rem;border:1px solid black;&:focus{outline:0;border-color:", ";}}input[type='submit']{width:auto;background:red;color:white;border:0;font-size:2rem;font-weight:600;padding:0.5rem 1.2rem;}fieldset{border:0;padding:0;&[disabled]{opacity:0.5;}&::before{height:10px;content:'';display:block;background-image:linear-gradient(to right,#493382 0%,#5052b5 50%,#493382 100%);}&[aria-busy='true']::before{background-size:50% auto;animation:", " 0.5s linear infinite;}}"], function (props) {
-  return props.theme.red;
-}, loading);
+})(["background:rgba(0,0,0,0.02);border:5px solid white;font-size:1.5rem;line-height:1.5;font-weight:600;padding 10rem 25% 5rem 25%;color:#666;height:67vh;h2{font-size:4rem;letter-spacing:.4rem;}p{font-size:1.1rem;margin:1rem 0;}label{display:block;margin:2rem 0;letter-spacing:.4rem;}input,textarea,select{width:100%;padding:0.5rem;font-size:1rem;border:1px solid black;&:focus{outline:0;border-color:red;}}input[type='submit']{width:auto;background:red;color:white;border:0;font-size:2rem;font-weight:600;padding:0.5rem 1.2rem;}fieldset{border:0;padding:0;&[disabled]{opacity:0.5;}&::before{height:10px;content:'';display:block;background-image:linear-gradient(to right,#493382 0%,#5052b5 50%,#493382 100%);}&[aria-busy='true']::before{background-size:50% auto;animation:", " 0.5s linear infinite;}}"], loading);
 /* harmony default export */ __webpack_exports__["default"] = (Form);
 
 /***/ }),
@@ -2421,6 +2484,27 @@ var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.wit
   return props.theme.mainColor;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavStyles);
+
+/***/ }),
+
+/***/ "./components/styles/utils/BannerStyle.js":
+/*!************************************************!*\
+  !*** ./components/styles/utils/BannerStyle.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var BannerStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "BannerStyle",
+  componentId: "sc-1g2pqs5-0"
+})(["width:100%;height:auto;font-size:2.5rem;text-align:center;font-style:italic;letter-spacing:.4rem;color:rgba(0,0,0,0.6);padding:6rem 0;background-image:linear-gradient( to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.7) ),url('/static/images/background3.jpg');background-size:cover;background-position:center center;box-shadow:2px 2px 2px ", ";border-radius:2px;"], function (props) {
+  return props.theme.lightgrey;
+});
+/* harmony default export */ __webpack_exports__["default"] = (BannerStyle);
 
 /***/ }),
 

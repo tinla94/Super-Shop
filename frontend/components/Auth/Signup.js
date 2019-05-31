@@ -6,6 +6,7 @@ import { FormButton } from '../styles/button/Button';
 import Error from '../Utils/ErrorMessage';
 import { CURRENT_USER_QUERY } from '../User/User';
 import Header from '../Header/Header';
+import Banner from '../Banner/Banner';
 
 
 
@@ -35,6 +36,9 @@ class Signup extends Component {
     return (
       <>
       <Header />
+      <Banner 
+        text='"Perfectionism is just fear in really good shoes!'
+      />
       <Mutation 
         mutation={SIGNUP_MUTATION} 
         variables={this.state}

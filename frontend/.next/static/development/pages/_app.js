@@ -933,7 +933,7 @@ var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/comp
 var ErrorStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "ErrorMessage__ErrorStyles",
   componentId: "sc-134dr6l-0"
-})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.5);border-left:5px solid #493382;p{margin:0;font-weight:100;}strong{margin-right:1rem;}"]);
+})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.5);border-left:5px solid #493382;color:red;p{margin:0;font-weight:400;}strong{margin-right:1rem;}"]);
 
 var DisplayError = function DisplayError(_ref) {
   var error = _ref.error;
@@ -945,14 +945,14 @@ var DisplayError = function DisplayError(_ref) {
         key: i,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         "data-test": "graphql-error",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 28
         },
         __self: this
       }, error.message.replace('GraphQL error: ', '')));
@@ -962,14 +962,14 @@ var DisplayError = function DisplayError(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ErrorStyles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     "data-test": "graphql-error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 36
     },
     __self: this
   }, error.message.replace('GraphQL error: ', '')));

@@ -62,6 +62,42 @@ var Signout = function Signout(props) {
 
 /***/ }),
 
+/***/ "./components/Banner/Banner.js":
+/*!*************************************!*\
+  !*** ./components/Banner/Banner.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_utils_BannerStyle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/utils/BannerStyle */ "./components/styles/utils/BannerStyle.js");
+var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Banner/Banner.js";
+
+
+
+var Banner = function Banner(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_utils_BannerStyle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, props.text));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Banner);
+
+/***/ }),
+
 /***/ "./components/Cart/AddToCart.js":
 /*!**************************************!*\
   !*** ./components/Cart/AddToCart.js ***!
@@ -745,7 +781,9 @@ var Logo = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h1.withConf
 var StyledHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].header.withConfig({
   displayName: "Header__StyledHeader",
   componentId: "sc-1o383dx-1"
-})([".bar{border-bottom:.5rem solid ", ";display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;@media (max-width:1300px){grid-template-columns:1fr;justify-content:center;}}.sub-bar{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid ", ";}"], function (props) {
+})([".bar{border-top:1px solid ", ";border-bottom:1px solid ", ";display:grid;grid-template-columns:auto 1fr;justify-content:space-between;align-items:stretch;@media (max-width:1300px){grid-template-columns:1fr;justify-content:center;}}.sub-bar{display:grid;grid-template-columns:1fr auto;border-bottom:1px solid ", ";}"], function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
   return props.theme.lightgrey;
 }, function (props) {
   return props.theme.lightgrey;
@@ -755,58 +793,58 @@ var Header = function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledHeader, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Logo, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 63
     },
     __self: this
   }, "Super Shoes"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 66
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "sub-bar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 68
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Search__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 69
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_Cart__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 71
     },
     __self: this
   }));
@@ -1297,13 +1335,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Header/Header */ "./components/Header/Header.js");
-/* harmony import */ var _Item__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Item */ "./components/Item/Item.js");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.esm.js");
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
-/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _Utils_Pagination__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Utils/Pagination */ "./components/Utils/Pagination.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../config */ "./config.js");
+/* harmony import */ var _Banner_Banner__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Banner/Banner */ "./components/Banner/Banner.js");
+/* harmony import */ var _Item__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Item */ "./components/Item/Item.js");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-apollo */ "./node_modules/react-apollo/react-apollo.esm.js");
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/src/index.js");
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Utils_Pagination__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Utils/Pagination */ "./components/Utils/Pagination.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../config */ "./config.js");
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Item/Items.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1344,12 +1383,13 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var ALL_ITEMS_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_4___default()(_templateObject(), _config__WEBPACK_IMPORTED_MODULE_7__["perPage"]);
-var Center = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+
+var ALL_ITEMS_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_5___default()(_templateObject(), _config__WEBPACK_IMPORTED_MODULE_8__["perPage"]);
+var Center = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "Items__Center",
   componentId: "sc-1avkupz-0"
 })(["text-align:center;"]);
-var ItemsList = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div.withConfig({
+var ItemsList = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "Items__ItemsList",
   componentId: "sc-1avkupz-1"
 })(["display:grid;grid-template-columns:1fr 1fr;grid-gap:60px;max-width:", ";margin:0 auto;"], function (props) {
@@ -1372,31 +1412,38 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Center, {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 41
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        page: this.props.page,
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Banner_Banner__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        text: "\"Get your shoes today with our great deal!\"",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 42
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_3__["Query"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Center, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Pagination__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        page: this.props.page,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_4__["Query"], {
         query: ALL_ITEMS_QUERY,
         fetchPolicy: "network-only",
         variables: {
-          skip: this.props.page * _config__WEBPACK_IMPORTED_MODULE_7__["perPage"] - _config__WEBPACK_IMPORTED_MODULE_7__["perPage"]
+          skip: this.props.page * _config__WEBPACK_IMPORTED_MODULE_8__["perPage"] - _config__WEBPACK_IMPORTED_MODULE_8__["perPage"]
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 47
         },
         __self: this
       }, function (_ref) {
@@ -1406,39 +1453,39 @@ function (_Component) {
         if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 55
           },
           __self: this
         }, "Loading...");
         if (error) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 56
           },
           __self: this
         }, "Error: ", error.message);
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ItemsList, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 58
           },
           __self: this
         }, data.items.map(function (item) {
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Item__WEBPACK_IMPORTED_MODULE_3__["default"], {
             item: item,
             key: item.id,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 54
+              lineNumber: 58
             },
             __self: this
           });
         }));
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Utils_Pagination__WEBPACK_IMPORTED_MODULE_7__["default"], {
         page: this.props.page,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 62
         },
         __self: this
       })));
@@ -1735,7 +1782,7 @@ var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/comp
 var ErrorStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "ErrorMessage__ErrorStyles",
   componentId: "sc-134dr6l-0"
-})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.5);border-left:5px solid #493382;p{margin:0;font-weight:100;}strong{margin-right:1rem;}"]);
+})(["padding:2rem;background:white;margin:2rem 0;border:1px solid rgba(0,0,0,0.5);border-left:5px solid #493382;color:red;p{margin:0;font-weight:400;}strong{margin-right:1rem;}"]);
 
 var DisplayError = function DisplayError(_ref) {
   var error = _ref.error;
@@ -1747,14 +1794,14 @@ var DisplayError = function DisplayError(_ref) {
         key: i,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         "data-test": "graphql-error",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 28
         },
         __self: this
       }, error.message.replace('GraphQL error: ', '')));
@@ -1764,14 +1811,14 @@ var DisplayError = function DisplayError(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ErrorStyles, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     "data-test": "graphql-error",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 36
     },
     __self: this
   }, error.message.replace('GraphQL error: ', '')));
@@ -2434,6 +2481,27 @@ var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].ul.wit
   return props.theme.mainColor;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavStyles);
+
+/***/ }),
+
+/***/ "./components/styles/utils/BannerStyle.js":
+/*!************************************************!*\
+  !*** ./components/styles/utils/BannerStyle.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var BannerStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "BannerStyle",
+  componentId: "sc-1g2pqs5-0"
+})(["width:100%;height:auto;font-size:2.5rem;text-align:center;font-style:italic;letter-spacing:.4rem;color:rgba(0,0,0,0.6);padding:6rem 0;background-image:linear-gradient( to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.7) ),url('/static/images/background3.jpg');background-size:cover;background-position:center center;box-shadow:2px 2px 2px ", ";border-radius:2px;"], function (props) {
+  return props.theme.lightgrey;
+});
+/* harmony default export */ __webpack_exports__["default"] = (BannerStyle);
 
 /***/ }),
 

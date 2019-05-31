@@ -18,9 +18,9 @@ const Form = styled.form`
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 600;
-  padding 10rem 20rem 5rem 20rem;
+  padding 10rem 25% 5rem 25%;
   color: #666;
-  height: 84vh;
+  height: 67vh;
 
   h2 {
     font-size: 4rem;
@@ -45,7 +45,7 @@ const Form = styled.form`
     border: 1px solid black;
     &:focus {
       outline: 0;
-      border-color: ${props => props.theme.red};
+      border-color: red;
     }
   }
   input[type='submit'] {
