@@ -32,7 +32,7 @@ export class DeleteItem extends Component {
         update={this.update}
       >
         {(deleteItem, { error }) => (
-          <button
+          <span
             onClick={() => {
               if (confirm('Are you sure you want to delete this item?')) {
                 deleteItem().catch(err => {
@@ -42,7 +42,7 @@ export class DeleteItem extends Component {
             }}
           >
             {this.props.children}
-          </button>
+          </span>
         )}
       </Mutation>
     )

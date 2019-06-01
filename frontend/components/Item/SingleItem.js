@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 import Link from 'next/link';
@@ -42,6 +43,8 @@ const SINGLE_ITEM_QUERY = gql`
 export class SingleItem extends Component {
   render() {
     return (
+      <>
+        <Header />
         <Query
             query={SINGLE_ITEM_QUERY}
             variables={{
@@ -80,6 +83,7 @@ export class SingleItem extends Component {
                 );
             }}    
         </Query>
+      </>
     )
   }
 }

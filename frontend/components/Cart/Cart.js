@@ -9,7 +9,7 @@ import formatMoney from '../../lib/formatMoney';
 import CartStyles from '../styles/cart/CartStyles';
 import Supreme from '../styles/cart/Supreme';
 import CloseButton from '../styles/CloseButton';
-import SickButton from '../styles/SickButton';
+import { CheckoutButton } from '../styles/button/Button';
 import Stripe from '../Payment/Stripe';
 
 
@@ -54,7 +54,7 @@ const Cart = () => {
                 <p>{formatMoney(calcTotalPrice(me.cart))}</p>
                 {me.cart.length ? (
                 <Stripe>
-                    <SickButton>Checkout</SickButton>
+                    <CheckoutButton>Checkout</CheckoutButton>
                 </Stripe>
                 ) : ''}
             </footer>

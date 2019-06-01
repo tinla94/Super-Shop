@@ -10,8 +10,9 @@ const BigButton = styled.button`
   font-size: 3rem;
   background: none;
   border: 0;
+  color: white;
   &:hover {
-    color: ${props => props.theme.red};
+    color: ${props => props.theme.purpleOne};
     cursor: pointer;
   }
 `;

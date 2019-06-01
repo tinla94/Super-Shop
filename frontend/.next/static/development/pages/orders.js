@@ -473,7 +473,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_cart_CartStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/cart/CartStyles */ "./components/styles/cart/CartStyles.js");
 /* harmony import */ var _styles_cart_Supreme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/cart/Supreme */ "./components/styles/cart/Supreme.js");
 /* harmony import */ var _styles_CloseButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/CloseButton */ "./components/styles/CloseButton.js");
-/* harmony import */ var _styles_SickButton__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/SickButton */ "./components/styles/SickButton.js");
+/* harmony import */ var _styles_button_Button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/button/Button */ "./components/styles/button/Button.js");
 /* harmony import */ var _Payment_Stripe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Payment/Stripe */ "./components/Payment/Stripe.js");
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Cart/Cart.js";
 
@@ -629,7 +629,7 @@ var Cart = function Cart() {
         lineNumber: 56
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_SickButton__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_button_Button__WEBPACK_IMPORTED_MODULE_11__["CheckoutButton"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 57
@@ -673,7 +673,7 @@ var Dot = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div.withConf
   displayName: "CartCount__Dot",
   componentId: "sc-1qhdos6-1"
 })(["background:", ";color:white;border-radius:50%;padding:0.5rem;line-height:2rem;min-width:3rem;margin-left:1rem;font-weight:100;font-feature-settings:'tnum';font-variant-numeric:tabular-nums;"], function (props) {
-  return props.theme.red;
+  return props.theme.darkgrey;
 });
 
 var CartCount = function CartCount(_ref) {
@@ -881,8 +881,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var BigButton = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].button.withConfig({
   displayName: "RemoveFromCart__BigButton",
   componentId: "sc-1vwi8nq-0"
-})(["font-size:3rem;background:none;border:0;&:hover{color:", ";cursor:pointer;}"], function (props) {
-  return props.theme.red;
+})(["font-size:3rem;background:none;border:0;color:white;&:hover{color:", ";cursor:pointer;}"], function (props) {
+  return props.theme.purpleOne;
 });
 var REMOVE_FROM_CART_MUTATION = graphql_tag__WEBPACK_IMPORTED_MODULE_4___default()(_templateObject());
 
@@ -942,7 +942,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 49
         },
         __self: this
       }, function (removeFromCart, _ref) {
@@ -958,7 +958,7 @@ function (_React$Component) {
           title: "Delete Item",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 62
           },
           __self: this
         }, "\xD7");
@@ -2116,36 +2116,18 @@ var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].butt
 
 /***/ }),
 
-/***/ "./components/styles/SickButton.js":
-/*!*****************************************!*\
-  !*** ./components/styles/SickButton.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-
-var SickButton = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
-  displayName: "SickButton",
-  componentId: "sc-1rhn5qh-0"
-})(["background:red;color:white;font-weight:500;border:0;border-radius:0;text-transform:uppercase;font-size:2rem;padding:0.8rem 1.5rem;transform:skew(-2deg);display:inline-block;transition:all 0.5s;&[disabled]{opacity:0.5;}"]);
-/* harmony default export */ __webpack_exports__["default"] = (SickButton);
-
-/***/ }),
-
 /***/ "./components/styles/button/Button.js":
 /*!********************************************!*\
   !*** ./components/styles/button/Button.js ***!
   \********************************************/
-/*! exports provided: FormButton, MainButton */
+/*! exports provided: FormButton, MainButton, CheckoutButton */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormButton", function() { return FormButton; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainButton", function() { return MainButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckoutButton", function() { return CheckoutButton; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 
 var FormButton = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
@@ -2158,6 +2140,10 @@ var MainButton = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].butto
 })(["padding:1.5rem 2.5rem;margin:2rem 0 1rem 0;font-size:1.5rem;letter-spacing:.3rem;color:white;border:none;box-shadow:1px 4px 4px rgba(0,0,0,0.4);cursor:pointer;transition:all .3s;background-color:", ";&:hover{transform:translateY(-2px) scale(1.1);}&:active,&:focus{box-shadow:1px 2px 4px rgba(0,0,0,0.4);border:none;}"], function (props) {
   return props.theme.mainColor;
 });
+var CheckoutButton = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
+  displayName: "Button__CheckoutButton",
+  componentId: "icrr16-2"
+})(["padding:1.5rem 2.5rem;margin:2rem 0 1rem 0;font-size:2rem;letter-spacing:.3rem;color:white;border:none;box-shadow:1px 4px 4px rgba(0,0,0,0.4);cursor:pointer;transition:all .3s;background-image:linear-gradient(to right,#3e4094 0%,#5052b5 50%,#3e4094 100%);;&:hover{transform:translateY(-2px) scale(1.1);}&:active,&:focus{box-shadow:1px 2px 4px rgba(0,0,0,0.4);border:none;}"]);
 
 
 /***/ }),
@@ -45538,7 +45524,7 @@ var Orders = function Orders(props) {
 
 /***/ }),
 
-/***/ 9:
+/***/ 7:
 /*!*******************************!*\
   !*** multi ./pages/orders.js ***!
   \*******************************/
@@ -45563,5 +45549,5 @@ module.exports = dll_114c37924188cb7dc18b;
 
 /***/ })
 
-},[[9,"static/runtime/webpack.js"]]]));;
+},[[7,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=orders.js.map

@@ -24,15 +24,23 @@ const ALL_ITEMS_QUERY = gql`
 
 const Center = styled.div`
   text-align: center;
+  margin: 0 1rem;
 `;
 
 const ItemsList = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
   max-width: ${props => props.theme.maxWidth};
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
+
+  @media (max-width: 614px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 `;
+
 
 export class Items extends Component {
   render() {

@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header';
+import Banner from '../Banner/Banner';
 import Router from 'next/router';
 import { Mutation, Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import Form from '../styles/Form';
+import Form from '../styles/form/Form';
+import { FormButton } from '../styles/button/Button';
 import formatMoney from '../../lib/formatMoney';
 import Error from '../Utils/ErrorMessage';
 
@@ -53,6 +56,11 @@ class UpdateItem extends Component {
 
   render() {
     return (
+      <>
+      <Header />
+      <Banner 
+        text='"New Shoes. New Style = Great Day!"'
+      />
       <Query
         query={SINGLE_ITEM_QUERY}
         variables={{
@@ -106,7 +114,7 @@ class UpdateItem extends Component {
                         onChange={this.handleChange}
                       />
                     </label>
-                    <button type="submit">{loading ? 'Saving...' : 'Save Changes'}</button>
+                    <FormButton type="submit">{loading ? 'Saving...' : 'Save Changes'}</FormButton>
                   </fieldset>
                 </Form>
               )}
@@ -114,6 +122,7 @@ class UpdateItem extends Component {
           );
         }}
       </Query>
+      </>
     );
   }
 }

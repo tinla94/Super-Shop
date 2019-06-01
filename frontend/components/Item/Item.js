@@ -3,10 +3,12 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import Title from '../styles/Title';
 import ItemStyles from '../styles/item/ItemStyles';
-import PriceTag from '../styles/item/PriceTag';
 import formatMoney from '../../lib/formatMoney';
 import DeleteItem from './DeleteItem';
 import AddToCart from '../Cart/AddToCart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen, faTrash, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 
 
 export class Item extends Component {
@@ -28,11 +30,10 @@ export class Item extends Component {
           >
           {item.image && <img src={item.image} alt={item.title} style={{ cursor: 'pointer'}}/>}
         </Link>
-
         <Title>
           <a>{item.title}</a>
+          <p>{formatMoney(item.price)}</p>
         </Title>
-        <PriceTag>{formatMoney(item.price)}</PriceTag>
         <div className="buttonList">
           <Link
             href={{
@@ -40,10 +41,16 @@ export class Item extends Component {
               query: { id: item.id },
             }}
           >
-            <a>Edit ✏️</a>
+            <span>
+              <FontAwesomeIcon icon={faPen} />
+            </span>
           </Link>
-          <AddToCart id={item.id} />
-          <DeleteItem id={item.id}>Delete This Item</DeleteItem>
+          <AddToCart id={item.id}>
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </AddToCart>
+          <DeleteItem id={item.id}>
+            <FontAwesomeIcon icon={faTrash} />
+          </DeleteItem>
         </div>
       </ItemStyles>
     )
