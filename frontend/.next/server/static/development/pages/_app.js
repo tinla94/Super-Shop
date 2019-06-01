@@ -116,8 +116,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CartItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CartItem */ "./components/Cart/CartItem.js");
 /* harmony import */ var _lib_calcTotalPrice__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/calcTotalPrice */ "./lib/calcTotalPrice.js");
 /* harmony import */ var _lib_formatMoney__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../lib/formatMoney */ "./lib/formatMoney.js");
-/* harmony import */ var _styles_CartStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/CartStyles */ "./components/styles/CartStyles.js");
-/* harmony import */ var _styles_Supreme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/Supreme */ "./components/styles/Supreme.js");
+/* harmony import */ var _styles_cart_CartStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/cart/CartStyles */ "./components/styles/cart/CartStyles.js");
+/* harmony import */ var _styles_cart_Supreme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/cart/Supreme */ "./components/styles/cart/Supreme.js");
 /* harmony import */ var _styles_CloseButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/CloseButton */ "./components/styles/CloseButton.js");
 /* harmony import */ var _styles_SickButton__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/SickButton */ "./components/styles/SickButton.js");
 /* harmony import */ var _Payment_Stripe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Payment/Stripe */ "./components/Payment/Stripe.js");
@@ -208,7 +208,7 @@ var Cart = function Cart() {
         localState = _ref4.localState;
     var me = user.data.me;
     if (!me) return null;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_CartStyles__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_cart_CartStyles__WEBPACK_IMPORTED_MODULE_8__["default"], {
       open: localState.data.cartOpen,
       __source: {
         fileName: _jsxFileName,
@@ -229,7 +229,7 @@ var Cart = function Cart() {
         lineNumber: 44
       },
       __self: this
-    }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Supreme__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_cart_Supreme__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
@@ -1087,32 +1087,6 @@ DisplayError.propTypes = {
 
 /***/ }),
 
-/***/ "./components/styles/CartStyles.js":
-/*!*****************************************!*\
-  !*** ./components/styles/CartStyles.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var CartStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "CartStyles",
-  componentId: "sc-9qu6jj-0"
-})(["padding:20px;position:relative;background:white;position:fixed;height:100%;top:0;right:0;width:40%;min-width:500px;bottom:0;transform:translateX(100%);transition:all 0.3s;box-shadow:0 0 10px 3px rgba(0,0,0,0.2);z-index:5;display:grid;grid-template-rows:auto 1fr auto;", ";header{border-bottom:5px solid ", ";margin-bottom:2rem;padding-bottom:2rem;}footer{border-top:10px double ", ";margin-top:2rem;padding-top:2rem;display:grid;grid-template-columns:auto auto;align-items:center;font-size:3rem;font-weight:900;p{margin:0;}}ul{margin:0;padding:0;list-style:none;overflow:scroll;}"], function (props) {
-  return props.open && "transform: translateX(0);";
-}, function (props) {
-  return props.theme.black;
-}, function (props) {
-  return props.theme.black;
-});
-/* harmony default export */ __webpack_exports__["default"] = (CartStyles);
-
-/***/ }),
-
 /***/ "./components/styles/CloseButton.js":
 /*!******************************************!*\
   !*** ./components/styles/CloseButton.js ***!
@@ -1128,7 +1102,11 @@ __webpack_require__.r(__webpack_exports__);
 var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
   displayName: "CloseButton",
   componentId: "p81tk9-0"
-})(["background:black;color:white;font-size:3rem;border:0;position:absolute;z-index:2;right:0;"]);
+})(["background:", ";color:white;font-size:3rem;border:0;position:absolute;padding:0 1rem;z-index:2;right:0;top:0;cursor:pointer;&:hover{background:#fff;color:", ";}"], function (props) {
+  return props.theme.purpleOne;
+}, function (props) {
+  return props.theme.purpleOne;
+});
 /* harmony default export */ __webpack_exports__["default"] = (CloseButton);
 
 /***/ }),
@@ -1153,10 +1131,38 @@ var SickButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button
 
 /***/ }),
 
-/***/ "./components/styles/Supreme.js":
-/*!**************************************!*\
-  !*** ./components/styles/Supreme.js ***!
-  \**************************************/
+/***/ "./components/styles/cart/CartStyles.js":
+/*!**********************************************!*\
+  !*** ./components/styles/cart/CartStyles.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var CartStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "CartStyles",
+  componentId: "nxlhl8-0"
+})(["padding:1rem;position:relative;background:", ";position:fixed;height:100%;top:0;right:0;width:40%;min-width:500px;bottom:0;transform:translateX(100%);transition:all 0.3s;box-shadow:0 0 10px 3px rgba(0,0,0,0.2);z-index:5;display:grid;grid-template-rows:auto 1fr auto;color:white;letter-spacing:.3rem;", ";header{border-bottom:5px solid ", ";margin-bottom:2rem;padding-bottom:2rem;}footer{border-top:10px double ", ";margin-top:2rem;padding-top:2rem;display:grid;grid-template-columns:auto auto;align-items:center;font-size:3rem;font-weight:900;color:white;p{margin:0;letter-spacing:.2rem;}}ul{margin:0;padding:0;list-style:none;overflow:scroll;}"], function (props) {
+  return props.theme.purpleTwo;
+}, function (props) {
+  return props.open && "transform: translateX(0);";
+}, function (props) {
+  return props.theme.purpleThree;
+}, function (props) {
+  return props.theme.purpleThree;
+});
+/* harmony default export */ __webpack_exports__["default"] = (CartStyles);
+
+/***/ }),
+
+/***/ "./components/styles/cart/Supreme.js":
+/*!*******************************************!*\
+  !*** ./components/styles/cart/Supreme.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1167,10 +1173,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var Supreme = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConfig({
   displayName: "Supreme",
-  componentId: "sc-1sup9n6-0"
-})(["background:", ";color:white;display:inline-block;padding:4px 5px;transform:skew(-3deg);margin:0;font-size:4rem;"], function (props) {
-  return props.theme.red;
-});
+  componentId: "sc-13w2v4k-0"
+})(["color:white;display:inline-block;padding:4px 5px;transform:skew(-3deg);margin:0;font-size:3rem;"]);
 /* harmony default export */ __webpack_exports__["default"] = (Supreme);
 
 /***/ }),

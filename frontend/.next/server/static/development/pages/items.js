@@ -319,8 +319,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CartItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CartItem */ "./components/Cart/CartItem.js");
 /* harmony import */ var _lib_calcTotalPrice__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/calcTotalPrice */ "./lib/calcTotalPrice.js");
 /* harmony import */ var _lib_formatMoney__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../lib/formatMoney */ "./lib/formatMoney.js");
-/* harmony import */ var _styles_CartStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/CartStyles */ "./components/styles/CartStyles.js");
-/* harmony import */ var _styles_Supreme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/Supreme */ "./components/styles/Supreme.js");
+/* harmony import */ var _styles_cart_CartStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/cart/CartStyles */ "./components/styles/cart/CartStyles.js");
+/* harmony import */ var _styles_cart_Supreme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../styles/cart/Supreme */ "./components/styles/cart/Supreme.js");
 /* harmony import */ var _styles_CloseButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../styles/CloseButton */ "./components/styles/CloseButton.js");
 /* harmony import */ var _styles_SickButton__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../styles/SickButton */ "./components/styles/SickButton.js");
 /* harmony import */ var _Payment_Stripe__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Payment/Stripe */ "./components/Payment/Stripe.js");
@@ -411,7 +411,7 @@ var Cart = function Cart() {
         localState = _ref4.localState;
     var me = user.data.me;
     if (!me) return null;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_CartStyles__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_cart_CartStyles__WEBPACK_IMPORTED_MODULE_8__["default"], {
       open: localState.data.cartOpen,
       __source: {
         fileName: _jsxFileName,
@@ -432,7 +432,7 @@ var Cart = function Cart() {
         lineNumber: 44
       },
       __self: this
-    }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_Supreme__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_cart_Supreme__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 47
@@ -1273,8 +1273,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _styles_Title__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/Title */ "./components/styles/Title.js");
-/* harmony import */ var _styles_ItemStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/ItemStyles */ "./components/styles/ItemStyles.js");
-/* harmony import */ var _styles_PriceTag__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/PriceTag */ "./components/styles/PriceTag.js");
+/* harmony import */ var _styles_item_ItemStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/item/ItemStyles */ "./components/styles/item/ItemStyles.js");
+/* harmony import */ var _styles_item_PriceTag__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/item/PriceTag */ "./components/styles/item/PriceTag.js");
 /* harmony import */ var _lib_formatMoney__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../lib/formatMoney */ "./lib/formatMoney.js");
 /* harmony import */ var _DeleteItem__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./DeleteItem */ "./components/Item/DeleteItem.js");
 /* harmony import */ var _Cart_AddToCart__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Cart/AddToCart */ "./components/Cart/AddToCart.js");
@@ -1324,7 +1324,7 @@ function (_Component) {
     key: "render",
     value: function render() {
       var item = this.props.item;
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_ItemStyles__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_item_ItemStyles__WEBPACK_IMPORTED_MODULE_4__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 22
@@ -1365,7 +1365,7 @@ function (_Component) {
           lineNumber: 33
         },
         __self: this
-      }, item.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_PriceTag__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, item.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_item_PriceTag__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 35
@@ -1958,7 +1958,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! graphql-tag */ "graphql-tag");
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(graphql_tag__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_PaginationStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/PaginationStyles */ "./components/styles/PaginationStyles.js");
+/* harmony import */ var _styles_item_PaginationStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/item/PaginationStyles */ "./components/styles/item/PaginationStyles.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../config */ "./config.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
@@ -2017,7 +2017,7 @@ var Pagination = function Pagination(props) {
     var count = data.itemsConnection.aggregate.count;
     var pages = Math.ceil(count / _config__WEBPACK_IMPORTED_MODULE_4__["perPage"]);
     var page = props.page;
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_PaginationStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_item_PaginationStyles__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 32
@@ -2350,32 +2350,6 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./components/styles/CartStyles.js":
-/*!*****************************************!*\
-  !*** ./components/styles/CartStyles.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var CartStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "CartStyles",
-  componentId: "sc-9qu6jj-0"
-})(["padding:20px;position:relative;background:white;position:fixed;height:100%;top:0;right:0;width:40%;min-width:500px;bottom:0;transform:translateX(100%);transition:all 0.3s;box-shadow:0 0 10px 3px rgba(0,0,0,0.2);z-index:5;display:grid;grid-template-rows:auto 1fr auto;", ";header{border-bottom:5px solid ", ";margin-bottom:2rem;padding-bottom:2rem;}footer{border-top:10px double ", ";margin-top:2rem;padding-top:2rem;display:grid;grid-template-columns:auto auto;align-items:center;font-size:3rem;font-weight:900;p{margin:0;}}ul{margin:0;padding:0;list-style:none;overflow:scroll;}"], function (props) {
-  return props.open && "transform: translateX(0);";
-}, function (props) {
-  return props.theme.black;
-}, function (props) {
-  return props.theme.black;
-});
-/* harmony default export */ __webpack_exports__["default"] = (CartStyles);
-
-/***/ }),
-
 /***/ "./components/styles/CloseButton.js":
 /*!******************************************!*\
   !*** ./components/styles/CloseButton.js ***!
@@ -2391,82 +2365,12 @@ __webpack_require__.r(__webpack_exports__);
 var CloseButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
   displayName: "CloseButton",
   componentId: "p81tk9-0"
-})(["background:black;color:white;font-size:3rem;border:0;position:absolute;z-index:2;right:0;"]);
+})(["background:", ";color:white;font-size:3rem;border:0;position:absolute;padding:0 1rem;z-index:2;right:0;top:0;cursor:pointer;&:hover{background:#fff;color:", ";}"], function (props) {
+  return props.theme.purpleOne;
+}, function (props) {
+  return props.theme.purpleOne;
+});
 /* harmony default export */ __webpack_exports__["default"] = (CloseButton);
-
-/***/ }),
-
-/***/ "./components/styles/ItemStyles.js":
-/*!*****************************************!*\
-  !*** ./components/styles/ItemStyles.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var Item = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "ItemStyles__Item",
-  componentId: "sc-1i4w9mi-0"
-})(["background:white;border:1px solid ", ";box-shadow:", ";position:relative;display:flex;flex-direction:column;img{width:100%;height:400px;object-fit:cover;}p{font-size:12px;line-height:2;font-weight:300;flex-grow:1;padding:0 3rem;font-size:1.5rem;}.buttonList{display:grid;width:100%;border-top:1px solid ", ";grid-template-columns:repeat(auto-fit,minmax(100px,1fr));grid-gap:1px;background:", ";& > *{background:white;border:0;font-size:1rem;padding:1rem;}}"], function (props) {
-  return props.theme.offWhite;
-}, function (props) {
-  return props.theme.bs;
-}, function (props) {
-  return props.theme.lightgrey;
-}, function (props) {
-  return props.theme.lightgrey;
-});
-/* harmony default export */ __webpack_exports__["default"] = (Item);
-
-/***/ }),
-
-/***/ "./components/styles/PaginationStyles.js":
-/*!***********************************************!*\
-  !*** ./components/styles/PaginationStyles.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var PaginationStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "PaginationStyles",
-  componentId: "sc-1sdn564-0"
-})(["text-align:center;display:inline-grid;grid-template-columns:repeat(4,auto);align-items:stretch;justify-content:center;align-content:center;margin:2rem 0;border:1px solid ", ";border-radius:10px;& > *{margin:0;padding:15px 30px;border-right:1px solid ", ";&:last-child{border-right:0;}}a[aria-disabled='true']{color:grey;pointer-events:none;}"], function (props) {
-  return props.theme.lightgrey;
-}, function (props) {
-  return props.theme.lightgrey;
-});
-/* harmony default export */ __webpack_exports__["default"] = (PaginationStyles);
-
-/***/ }),
-
-/***/ "./components/styles/PriceTag.js":
-/*!***************************************!*\
-  !*** ./components/styles/PriceTag.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var PriceTag = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.span.withConfig({
-  displayName: "PriceTag",
-  componentId: "sc-4m185r-0"
-})(["background:", ";transform:rotate(3deg);color:white;font-weight:600;padding:5px;line-height:1;font-size:3rem;display:inline-block;position:absolute;top:-3px;right:-3px;"], function (props) {
-  return props.theme.red;
-});
-/* harmony default export */ __webpack_exports__["default"] = (PriceTag);
 
 /***/ }),
 
@@ -2490,28 +2394,6 @@ var SickButton = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button
 
 /***/ }),
 
-/***/ "./components/styles/Supreme.js":
-/*!**************************************!*\
-  !*** ./components/styles/Supreme.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var Supreme = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConfig({
-  displayName: "Supreme",
-  componentId: "sc-1sup9n6-0"
-})(["background:", ";color:white;display:inline-block;padding:4px 5px;transform:skew(-3deg);margin:0;font-size:4rem;"], function (props) {
-  return props.theme.red;
-});
-/* harmony default export */ __webpack_exports__["default"] = (Supreme);
-
-/***/ }),
-
 /***/ "./components/styles/Title.js":
 /*!************************************!*\
   !*** ./components/styles/Title.js ***!
@@ -2531,6 +2413,54 @@ var Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConf
   return props.theme.red;
 });
 /* harmony default export */ __webpack_exports__["default"] = (Title);
+
+/***/ }),
+
+/***/ "./components/styles/cart/CartStyles.js":
+/*!**********************************************!*\
+  !*** ./components/styles/cart/CartStyles.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var CartStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "CartStyles",
+  componentId: "nxlhl8-0"
+})(["padding:1rem;position:relative;background:", ";position:fixed;height:100%;top:0;right:0;width:40%;min-width:500px;bottom:0;transform:translateX(100%);transition:all 0.3s;box-shadow:0 0 10px 3px rgba(0,0,0,0.2);z-index:5;display:grid;grid-template-rows:auto 1fr auto;color:white;letter-spacing:.3rem;", ";header{border-bottom:5px solid ", ";margin-bottom:2rem;padding-bottom:2rem;}footer{border-top:10px double ", ";margin-top:2rem;padding-top:2rem;display:grid;grid-template-columns:auto auto;align-items:center;font-size:3rem;font-weight:900;color:white;p{margin:0;letter-spacing:.2rem;}}ul{margin:0;padding:0;list-style:none;overflow:scroll;}"], function (props) {
+  return props.theme.purpleTwo;
+}, function (props) {
+  return props.open && "transform: translateX(0);";
+}, function (props) {
+  return props.theme.purpleThree;
+}, function (props) {
+  return props.theme.purpleThree;
+});
+/* harmony default export */ __webpack_exports__["default"] = (CartStyles);
+
+/***/ }),
+
+/***/ "./components/styles/cart/Supreme.js":
+/*!*******************************************!*\
+  !*** ./components/styles/cart/Supreme.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var Supreme = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h3.withConfig({
+  displayName: "Supreme",
+  componentId: "sc-13w2v4k-0"
+})(["color:white;display:inline-block;padding:4px 5px;transform:skew(-3deg);margin:0;font-size:3rem;"]);
+/* harmony default export */ __webpack_exports__["default"] = (Supreme);
 
 /***/ }),
 
@@ -2591,10 +2521,8 @@ __webpack_require__.r(__webpack_exports__);
 var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.withConfig({
   displayName: "NavStyles",
   componentId: "sc-9m6sd9-0"
-})(["margin:0;padding:0;display:flex;justify-self:end;font-size:2rem;background:", ";a,button{color:", ";padding:1rem 3rem;letter-spacing:.2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:900;font-size:1.3rem;background:none;border:0;cursor:pointer;font-weight:800;@media (max-width:700px){font-size:1.2rem;padding:1rem;}&:before{content:'';width:2px;background:", ";height:100%;left:0;position:absolute;transform:skew(-20deg);top:0;bottom:0;}&:after{height:2px;background:", ";content:'';width:0;position:absolute;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);left:50%;margin-top:2rem;}&:hover,&:focus,&:active{color:#fff;}}@media (max-width:1300px){border-top:1px solid ", ";width:100%;justify-content:center;font-size:1.5rem;}"], function (props) {
+})(["margin:0;padding:0;display:flex;justify-self:end;font-size:2rem;background:", ";a,button{color:", ";padding:1rem 3rem;letter-spacing:.2rem;display:flex;align-items:center;position:relative;text-transform:uppercase;font-weight:900;font-size:1.3rem;background:none;border:0;cursor:pointer;font-weight:800;@media (max-width:700px){font-size:1.2rem;padding:1rem;}&:before{content:'';width:2px;height:100%;left:0;position:absolute;transform:skew(-20deg);top:0;bottom:0;}&:after{height:2px;background:", ";content:'';width:0;position:absolute;transform:translateX(-50%);transition:width 0.4s;transition-timing-function:cubic-bezier(1,-0.65,0,2.31);left:50%;margin-top:2rem;}&:hover,&:focus,&:active{color:#fff;}}@media (max-width:1300px){border-top:1px solid ", ";width:100%;justify-content:center;font-size:1.5rem;}"], function (props) {
   return props.theme.mainColor;
-}, function (props) {
-  return props.theme.lightgrey;
 }, function (props) {
   return props.theme.lightgrey;
 }, function (props) {
@@ -2603,6 +2531,80 @@ var NavStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.ul.with
   return props.theme.mainColor;
 });
 /* harmony default export */ __webpack_exports__["default"] = (NavStyles);
+
+/***/ }),
+
+/***/ "./components/styles/item/ItemStyles.js":
+/*!**********************************************!*\
+  !*** ./components/styles/item/ItemStyles.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var Item = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "ItemStyles__Item",
+  componentId: "sc-4030v1-0"
+})(["background:white;border:1px solid ", ";box-shadow:", ";position:relative;display:flex;flex-direction:column;img{width:100%;height:400px;object-fit:cover;}p{font-size:12px;line-height:2;font-weight:300;flex-grow:1;padding:0 3rem;font-size:1.5rem;}.buttonList{display:grid;width:100%;border-top:1px solid ", ";grid-template-columns:repeat(auto-fit,minmax(100px,1fr));grid-gap:1px;background:", ";& > *{background:white;border:0;font-size:1rem;padding:1rem;}}"], function (props) {
+  return props.theme.offWhite;
+}, function (props) {
+  return props.theme.bs;
+}, function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
+  return props.theme.lightgrey;
+});
+/* harmony default export */ __webpack_exports__["default"] = (Item);
+
+/***/ }),
+
+/***/ "./components/styles/item/PaginationStyles.js":
+/*!****************************************************!*\
+  !*** ./components/styles/item/PaginationStyles.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var PaginationStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "PaginationStyles",
+  componentId: "sc-1opf8em-0"
+})(["text-align:center;display:inline-grid;grid-template-columns:repeat(4,auto);align-items:stretch;justify-content:center;align-content:center;margin:2rem 0;border:1px solid ", ";border-radius:10px;& > *{margin:0;padding:15px 30px;border-right:1px solid ", ";&:last-child{border-right:0;}}a[aria-disabled='true']{color:grey;pointer-events:none;}"], function (props) {
+  return props.theme.lightgrey;
+}, function (props) {
+  return props.theme.lightgrey;
+});
+/* harmony default export */ __webpack_exports__["default"] = (PaginationStyles);
+
+/***/ }),
+
+/***/ "./components/styles/item/PriceTag.js":
+/*!********************************************!*\
+  !*** ./components/styles/item/PriceTag.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var PriceTag = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.span.withConfig({
+  displayName: "PriceTag",
+  componentId: "sc-88hl6-0"
+})(["background:", ";transform:rotate(3deg);color:white;font-weight:600;padding:5px;line-height:1;font-size:3rem;display:inline-block;position:absolute;top:-3px;right:-3px;"], function (props) {
+  return props.theme.red;
+});
+/* harmony default export */ __webpack_exports__["default"] = (PriceTag);
 
 /***/ }),
 

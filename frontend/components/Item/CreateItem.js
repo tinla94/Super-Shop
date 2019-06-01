@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import Header from '../Header/Header';
+import Banner from '../Banner/Banner';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
 import Router from 'next/router';
-import Form from '../styles/Form';
+import Form from '../styles/form/Form';
+import { FormButton } from '../styles/button/Button';
 import Error from '../Utils/ErrorMessage';
 import { ALL_ITEMS_QUERY } from './Items';
 
@@ -63,6 +66,11 @@ class CreateItem extends Component {
 
   render() {
     return (
+      <>
+      <Header />
+      <Banner 
+        text='"Never underestimate the power of a shoe."'
+      />
       <Mutation 
         mutation={CREATE_ITEM_MUTATION} 
         variables={this.state}>
@@ -82,6 +90,7 @@ class CreateItem extends Component {
               });
             }}
           >
+            <h2>Sell Your Item</h2>
             <Error error={error} />
             <fieldset disabled={loading} aria-busy={loading}>
               <label htmlFor="file">
@@ -136,11 +145,12 @@ class CreateItem extends Component {
                   onChange={this.handleChange}
                 />
               </label>
-              <button type="submit">Submit</button>
+              <FormButton type="submit">Submit</FormButton>
             </fieldset>
           </Form>
         )}
       </Mutation>
+      </>
     );
   }
 }

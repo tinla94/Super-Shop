@@ -6,7 +6,8 @@ import styled from 'styled-components';
 import gql from 'graphql-tag';
 import Error from '../Utils/ErrorMessage';
 import formatMoney from '../../lib/formatMoney';
-import OrderItemStyles from '../styles/OrderItemStyles';
+import OrderItemStyles from '../styles/order/OrderItemStyles';
+import Header from '../Header/Header';
 
 
 const USER_ORDERS_QUERY = gql`
@@ -36,6 +37,8 @@ const ordersStyle = styled.ul`
 class OrderList extends React.Component {
   render() {
     return (
+      <>
+      <Header />
       <Query query={USER_ORDERS_QUERY}>
         {({ data: { orders }, loading, error }) => {
           if (loading) return <p>loading...</p>;
@@ -43,7 +46,18 @@ class OrderList extends React.Component {
           console.log(orders);
           return (
             <div>
-                <h2>You have {orders.length} orders</h2>
+                <h2 style={{
+                  marginLeft: '5rem',
+                  marginTop: '2rem',
+                  fontSize: '2.5rem',
+                  letterSpacing: '.4rem',
+                  color: '#676d79'
+                }}>
+                  You have {orders.length} orders
+                </h2>
+                <hr style={{ 
+                  margin: '1rem 5rem'
+                }}/>
                 {orders.map(order => (
                   <OrderItemStyles 
                     key={order.id}>
@@ -73,6 +87,7 @@ class OrderList extends React.Component {
           );
         }}
       </Query>
+      </>
     );
   }
 }

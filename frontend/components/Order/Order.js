@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../Header/Header';
 import PropTypes from 'prop-types';
 import { Query } from 'react-apollo';
 import { format } from 'date-fns';
@@ -6,7 +7,7 @@ import Head from 'next/head';
 import gql from 'graphql-tag';
 import formatMoney from '../../lib/formatMoney';
 import Error from '../Utils/ErrorMessage';
-import OrderStyles from '../styles/OrderStyles';
+import OrderStyles from '../styles/order/OrderStyles';
 
 
 const SINGLE_ORDER_QUERY = gql`
@@ -37,6 +38,8 @@ class Order extends React.Component {
   };
   render() {
     return (
+      <>
+      <Header />
       <Query query={SINGLE_ORDER_QUERY} variables={{ id: this.props.id }}>
         {({ data, error, loading }) => {
           if (error) return <Error error={error} />;
@@ -85,6 +88,7 @@ class Order extends React.Component {
           );
         }}
       </Query>
+      </>
     );
   }
 }
