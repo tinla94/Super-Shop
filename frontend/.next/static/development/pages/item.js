@@ -1548,6 +1548,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _DeleteItem__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./DeleteItem */ "./components/Item/DeleteItem.js");
 /* harmony import */ var _Cart_AddToCart__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Cart/AddToCart */ "./components/Cart/AddToCart.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/Item/SingleItem.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -1590,11 +1592,21 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
+
 var SingleItemStyles = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "SingleItem__SingleItemStyles",
   componentId: "c09622-0"
-})(["max-width:1200px;margin:2rem auto;box-shadow:", ";display:grid;grid-auto-columns:1fr;grid-auto-flow:column;min-height:800px;img{width:100%;height:100%;object-fit:contain;}.details{margin:3rem;font-size:2rem;}"], function (props) {
-  return props.theme.bs;
+})(["width:100%;.singleitem-top{display:flex;align-items:center;padding:3rem 5rem 0 5rem;h2{font-size:2.6rem;letter-spacing:.3rem;}&-details{margin-left:3rem;}&-buttons{width:100%;padding:1rem 0;}}hr{margin-bottom:1rem;border-top:4px solid", ";}img{width:50%;height:auto;border:1px solid black;box-shadow:2px 2px 2px rgba(0,0,0,0.5);border-radius:.5rem;transition:all .3s;&:hover{transform:scale(1.1);}}span{margin-right:2.5rem;font-size:2rem;cursor:pointer;&:nth-child(1){color:", "}&:nth-child(2){color:", "}&:nth-child(3){color:", "}&:hover{color:", ";}}.singleitem-bottom{padding:5rem 5rem 2rem 5rem !important;font-size:2rem;letter-spacing:.2rem;h3{font-size:3rem;letter-spacing:.4rem;}}"], function (props) {
+  return props.theme.darkgrey;
+}, function (props) {
+  return props.theme.purpleOne;
+}, function (props) {
+  return props.theme.purpleTwo;
+}, function (props) {
+  return props.theme.purpleThree;
+}, function (props) {
+  return props.theme.lightgrey;
 });
 var SINGLE_ITEM_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_2___default()(_templateObject());
 var SingleItem =
@@ -1616,7 +1628,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 106
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_apollo__WEBPACK_IMPORTED_MODULE_3__["Query"], {
@@ -1626,7 +1638,7 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 107
         },
         __self: this
       }, function (_ref) {
@@ -1637,14 +1649,14 @@ function (_Component) {
           error: error,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 113
           },
           __self: this
         });
         if (loading) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 114
           },
           __self: this
         }, "Loading..."); // Check item length
@@ -1652,7 +1664,7 @@ function (_Component) {
         if (!data.item) return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 57
+            lineNumber: 116
           },
           __self: this
         }, "No Item Found for ", _this.props.id);
@@ -1660,59 +1672,66 @@ function (_Component) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SingleItemStyles, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 119
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 61
+            lineNumber: 120
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 62
+            lineNumber: 121
           },
           __self: this
-        }, "Super Shoes | ", item.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        }, "Super Shoes | ", item.title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "singleitem-top",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 123
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           src: item.largeImage,
           alt: item.title,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 64
+            lineNumber: 124
           },
           __self: this
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "details",
+          className: "singleitem-top-details",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 65
+            lineNumber: 125
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 126
           },
           __self: this
         }, item.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 127
           },
           __self: this
-        }, item.user), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        }, item.user), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 68
+            lineNumber: 128
           },
           __self: this
-        }, item.description), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-          className: "buttonList",
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "singleitem-top-buttons",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 69
+            lineNumber: 129
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -1724,30 +1743,76 @@ function (_Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 70
+            lineNumber: 130
           },
           __self: this
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 76
+            lineNumber: 136
           },
           __self: this
-        }, "Edit \u270F\uFE0F")), "\xE5", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_AddToCart__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_10__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__["faPen"],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 137
+          },
+          __self: this
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Cart_AddToCart__WEBPACK_IMPORTED_MODULE_9__["default"], {
           id: item.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 78
+            lineNumber: 140
           },
           __self: this
-        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DeleteItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_10__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__["faShoppingCart"],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 141
+          },
+          __self: this
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DeleteItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
           id: item.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 79
+            lineNumber: 143
           },
           __self: this
-        }, "Delete This Item"))));
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_10__["FontAwesomeIcon"], {
+          icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__["faTrash"],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 144
+          },
+          __self: this
+        }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "singleitem-bottom",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 149
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 150
+          },
+          __self: this
+        }, "Description"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 151
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 152
+          },
+          __self: this
+        }, item.description)));
       }));
     }
   }]);

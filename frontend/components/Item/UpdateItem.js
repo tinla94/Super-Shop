@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import Banner from '../Banner/Banner';
 import Router from 'next/router';
 import { Mutation, Query } from 'react-apollo';
@@ -122,6 +123,7 @@ class UpdateItem extends Component {
           );
         }}
       </Query>
+      <Footer />
       </>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import Banner from '../Banner/Banner';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
@@ -64,6 +65,7 @@ class RequestReset extends Component {
               </Form>
             )}
           </Mutation>
+          <Footer />
         </>
         )
     }

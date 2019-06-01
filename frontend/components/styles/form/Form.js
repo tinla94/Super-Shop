@@ -20,7 +20,7 @@ const Form = styled.form`
   font-weight: 600;
   padding 10rem 25% 5rem 25%;
   color: #666;
-  height: 67vh;
+  height: 45vh;
 
   h2 {
     font-size: 4rem;

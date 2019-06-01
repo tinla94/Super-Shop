@@ -8,24 +8,83 @@ import styled from 'styled-components';
 import Head from 'next/head';
 import DeleteItem from './DeleteItem';
 import AddToCart from '../Cart/AddToCart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen, faTrash, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 
 const SingleItemStyles = styled.div`
-  max-width: 1200px;
-  margin: 2rem auto;
-  box-shadow: ${props => props.theme.bs};
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: column;
-  min-height: 800px;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+
+  
+  .singleitem-top {
+    display: flex;
+    align-items:center;
+    padding: 3rem 5rem 0 5rem;
+
+    h2 {
+      font-size: 2.6rem;
+      letter-spacing: .3rem;
+    }
+
+    &-details {
+      margin-left: 3rem;
+    }
+
+    &-buttons {
+      width: 100%;
+      padding: 1rem 0;
+    }
   }
-  .details {
-    margin: 3rem;
+
+  hr {
+    margin-bottom: 1rem;
+    border-top: 4px solid${props => props.theme.darkgrey};
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: .5rem;
+    transition: all .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+  }
+
+  span {
+    margin-right: 2.5rem;
     font-size: 2rem;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      color: ${props => props.theme.purpleOne}
+    }
+
+    &:nth-child(2) {
+      color: ${props => props.theme.purpleTwo}
+    }
+
+    &:nth-child(3) {
+      color: ${props => props.theme.purpleThree}
+    }
+
+    &:hover {
+      color: ${props => props.theme.lightgrey};
+    }
+  }
+
+  .singleitem-bottom {
+    padding: 5rem 5rem 2rem 5rem !important;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+
+      h3 {
+        font-size: 3rem;
+        letter-spacing: .4rem;
+      }
   }
 `;
 
@@ -61,23 +120,36 @@ export class SingleItem extends Component {
                       <Head>
                         <title>Super Shoes | {item.title}</title>
                       </Head>
-                      <img src={item.largeImage} alt={item.title} />
-                      <div className="details">
-                        <h2>{item.title}</h2>
-                        <p>{item.user}</p>
-                        <p>{item.description}</p>
-                        <div className="buttonList">
-                        <Link
-                          href={{
-                            pathname: 'update',
-                            query: { id: item.id },
-                          }}
-                        >
-                          <a>Edit ✏️</a>
-                        </Link>å
-                        <AddToCart id={item.id} />
-                        <DeleteItem id={item.id}>Delete This Item</DeleteItem>
+                      <div className="singleitem-top">
+                        <img src={item.largeImage} alt={item.title} />
+                        <div className="singleitem-top-details">
+                          <h2>{item.title}</h2>
+                          <p>{item.user}</p>
+                          <hr />
+                          <div className="singleitem-top-buttons">
+                            <Link
+                              href={{
+                                pathname: 'update',
+                                query: { id: item.id },
+                              }}
+                            >
+                              <span>
+                                <FontAwesomeIcon icon={faPen} />
+                              </span>
+                            </Link>
+                            <AddToCart id={item.id}>
+                              <FontAwesomeIcon icon={faShoppingCart} />
+                            </AddToCart>
+                            <DeleteItem id={item.id}>
+                              <FontAwesomeIcon icon={faTrash} />
+                            </DeleteItem>
+                          </div>
+                        </div>
                       </div>
+                      <div className="singleitem-bottom">
+                        <h3>Description</h3>
+                        <hr />
+                        <p>{item.description}</p>
                       </div>
                     </SingleItemStyles>
                 );
