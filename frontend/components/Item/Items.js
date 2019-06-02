@@ -42,7 +42,7 @@ const ItemsList = styled.div`
 `;
 
 
-export class Items extends Component {
+class Items extends Component {
   render() {
     return (
       <>

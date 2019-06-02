@@ -1350,12 +1350,11 @@ _defineProperty(Item, "propTypes", {
 /*!**********************************!*\
   !*** ./components/Item/Items.js ***!
   \**********************************/
-/*! exports provided: Items, default, ALL_ITEMS_QUERY */
+/*! exports provided: default, ALL_ITEMS_QUERY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Items", function() { return Items; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ALL_ITEMS_QUERY", function() { return ALL_ITEMS_QUERY; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -1420,6 +1419,7 @@ var ItemsList = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.wi
 })(["display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:1rem;max-width:", ";margin:0 auto 4rem auto;@media (max-width:614px){&{grid-template-columns:1fr 1fr;}}"], function (props) {
   return props.theme.maxWidth;
 });
+
 var Items =
 /*#__PURE__*/
 function (_Component) {
@@ -1519,6 +1519,7 @@ function (_Component) {
 
   return Items;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
 /* harmony default export */ __webpack_exports__["default"] = (Items);
 
 
@@ -1745,11 +1746,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/tintinla/Documents/Projects/Super-Shoes/frontend/components/User/User.js";
 
-
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  query {\n    me {\n      id\n      email\n      name\n      permissions\n      cart {\n        id\n        quantity\n        item {\n          id\n          price\n          image\n          title\n          description\n        }\n      }\n    }\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  query CURRENT_USER_QUERY {\n    me {\n      id\n      email\n      name\n      permissions\n      cart {\n        id\n        quantity\n        item {\n          id\n          price\n          image\n          title\n          description\n        }\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -1763,6 +1763,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var CURRENT_USER_QUERY = graphql_tag__WEBPACK_IMPORTED_MODULE_2___default()(_templateObject());
 
 var User = function User(props) {
@@ -1770,7 +1771,7 @@ var User = function User(props) {
     query: CURRENT_USER_QUERY,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   }), function (payload) {
