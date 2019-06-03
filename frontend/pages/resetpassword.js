@@ -1,6 +1,5 @@
 import RequestReset from '../components/Auth/RequestReset';
 
-
 const ResetPassword = () => (
     <>
         <RequestReset />

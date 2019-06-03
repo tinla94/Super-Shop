@@ -1,4 +1,4 @@
-import PasswordReset from '../components/Users/PasswordReset';
+import PasswordReset from '../components/Auth/PasswordReset';
 
 const Reset = props => (
     <div>

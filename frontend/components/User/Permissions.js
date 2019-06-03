@@ -1,9 +1,9 @@
 import { Query, Mutation } from 'react-apollo';
-import Error from '../ErrorMessage';
+import Error from '../Utils/ErrorMessage';
 import gql from 'graphql-tag';
 import Table from '../styles/Table';
-import SickButton from '../styles/SickButton';
 import PropTypes from 'prop-types';
+import { FormButton} from '../styles/button/Button';
 
 
 
@@ -125,9 +125,9 @@ const possiblePermissions = [
                 </td>
               ))}
               <td>
-                <SickButton type="button" disabled={loading} onClick={updatePermissions}>
+                <FormButton type="button" disabled={loading} onClick={updatePermissions}>
                   Updat{loading ? 'ing' : 'e'}
-                </SickButton>
+                </FormButton>
               </td>
             </tr>
           </>

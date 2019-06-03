@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Mutation } from 'react-apollo';
 import PropTypes from 'prop-types';
 import gql from 'graphql-tag';
-import Form from '../styles/Form';
-import Error from '../ErrorMessage';
+import Form from '../styles/form/Form';
+import Error from '../Utils/ErrorMessage';
 import { CURRENT_USER_QUERY } from '../User/User';
 
 
